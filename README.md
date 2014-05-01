@@ -6,7 +6,7 @@ Python script to train a Naive Bayesian Classifier with NLTK - based on https://
 
 Classifier is trained using 1.6M Tweets pre-procesed at Sanford and available at http://help.sentiment140.com/for-students
 
-Other data is also saved in the training-data folder
+Other training data can also be used but is not saved in the repo's training-data folder because it's too large.
 
 Script and HTML template are designed for specific Zooniverse data.
 This is extracted from the Zooniverse discussion platform 'Talk' - please contact rob@zooniverse.org for more information.
