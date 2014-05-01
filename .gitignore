@@ -1,3 +1,9 @@
+# Data directories and big files
+training-data/combined/
+training-data/rt-polaritydata/
+training-data/talk_derived/
+training-data/twitter_data/source/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -51,4 +57,3 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
-

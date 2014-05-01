@@ -1,0 +1,1490 @@
+<style type="text/css">
+  body {font-size:14px; color: #ffffff; font-family: sans-serif;}
+  div.thumbnail {display: inline-block; position: relative; margin: 5px;}
+  div.thumbnail img {width:250px;}
+  div.details {position:absolute; bottom:5px; left:5px; width:240px;}
+  span.pos_frac {color: #8DFF87;}
+  span.neg_frac {color: #FF7B6B;}
+  span.zoo_id {position:absolute; top:5px; left:5px;}
+  span.comments {position:absolute; top:5px; right:5px;}
+  span.words {display:none;}
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+     function id2url(zooID) {
+       $.getJSON( "https://api.zooniverse.org/projects/serengeti/subjects/"+zooID, function( data ) {
+        if (data.location.standard instanceof Array) {
+          $("#"+zooID).attr("src", data.location.standard[0]);
+        } else {
+          $("#"+zooID).attr("src", data.location.standard);
+        }
+      });
+     }
+     $(document).ready(function() {
+       $( ".img_waiting" ).each(function( index ) {
+          id2url($( this ).attr('id'));
+       });
+     })
+  </script>
+
+  <body>
+  <div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x175' />
+      <span class='zoo_id'>BSG000000a</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>12</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x175' />
+      <span class='zoo_id'>CSGS000012</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x175' />
+      <span class='zoo_id'>BSG0000009</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>133</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x175' />
+      <span class='zoo_id'>CSGL000015</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000bj80' target='_blank'><img class='img_waiting' id='ASG000bj80' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000bj80</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0008jqr' target='_blank'><img class='img_waiting' id='ASG0008jqr' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0008jqr</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>42</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000mxf1' target='_blank'><img class='img_waiting' id='ASG000mxf1' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000mxf1</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0008uoe' target='_blank'><img class='img_waiting' id='ASG0008uoe' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0008uoe</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x175' />
+      <span class='zoo_id'>CSGS000083</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0006ugy' target='_blank'><img class='img_waiting' id='ASG0006ugy' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0006ugy</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003wyd' target='_blank'><img class='img_waiting' id='ASG0003wyd' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003wyd</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0009pv8' target='_blank'><img class='img_waiting' id='ASG0009pv8' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0009pv8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000njam' target='_blank'><img class='img_waiting' id='ASG000njam' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000njam</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000tvrl' target='_blank'><img class='img_waiting' id='ASG000tvrl' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000tvrl</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>12</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000coxa' target='_blank'><img class='img_waiting' id='ASG000coxa' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000coxa</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000qnck' target='_blank'><img class='img_waiting' id='ASG000qnck' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000qnck</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0010hbl' target='_blank'><img class='img_waiting' id='ASG0010hbl' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0010hbl</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003ut0' target='_blank'><img class='img_waiting' id='ASG0003ut0' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003ut0</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005k62' target='_blank'><img class='img_waiting' id='ASG0005k62' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005k62</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005npp' target='_blank'><img class='img_waiting' id='ASG0005npp' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005npp</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0000acf' target='_blank'><img class='img_waiting' id='ASG0000acf' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0000acf</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>13</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003kxm' target='_blank'><img class='img_waiting' id='ASG0003kxm' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003kxm</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000d58p' target='_blank'><img class='img_waiting' id='ASG000d58p' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000d58p</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00116wk' target='_blank'><img class='img_waiting' id='ASG00116wk' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00116wk</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000tva4' target='_blank'><img class='img_waiting' id='ASG000tva4' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000tva4</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0002ec5' target='_blank'><img class='img_waiting' id='ASG0002ec5' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0002ec5</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000s67b' target='_blank'><img class='img_waiting' id='ASG000s67b' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000s67b</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00074kx' target='_blank'><img class='img_waiting' id='ASG00074kx' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00074kx</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000fgsj' target='_blank'><img class='img_waiting' id='ASG000fgsj' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000fgsj</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000bkin' target='_blank'><img class='img_waiting' id='ASG000bkin' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000bkin</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000errd' target='_blank'><img class='img_waiting' id='ASG000errd' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000errd</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0000sqq' target='_blank'><img class='img_waiting' id='ASG0000sqq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0000sqq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000pndq' target='_blank'><img class='img_waiting' id='ASG000pndq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000pndq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.95</span>
+        <span class='neg_frac'>0.05</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0001lkk' target='_blank'><img class='img_waiting' id='ASG0001lkk' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0001lkk</span>
+      <div class='details'>
+        <span class='pos_frac'>0.95</span>
+        <span class='neg_frac'>0.05</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000dbm8' target='_blank'><img class='img_waiting' id='ASG000dbm8' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000dbm8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.95</span>
+        <span class='neg_frac'>0.05</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000nnt9' target='_blank'><img class='img_waiting' id='ASG000nnt9' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000nnt9</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003d4j' target='_blank'><img class='img_waiting' id='ASG0003d4j' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003d4j</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>41</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000z0n4' target='_blank'><img class='img_waiting' id='ASG000z0n4' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000z0n4</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000csyh' target='_blank'><img class='img_waiting' id='ASG000csyh' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000csyh</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000olbi' target='_blank'><img class='img_waiting' id='ASG000olbi' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000olbi</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000deor' target='_blank'><img class='img_waiting' id='ASG000deor' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000deor</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000a48w' target='_blank'><img class='img_waiting' id='ASG000a48w' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000a48w</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00056ok' target='_blank'><img class='img_waiting' id='ASG00056ok' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00056ok</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00109sf' target='_blank'><img class='img_waiting' id='ASG00109sf' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00109sf</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003uty' target='_blank'><img class='img_waiting' id='ASG0003uty' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003uty</span>
+      <div class='details'>
+        <span class='pos_frac'>0.93</span>
+        <span class='neg_frac'>0.07</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0004jcv' target='_blank'><img class='img_waiting' id='ASG0004jcv' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0004jcv</span>
+      <div class='details'>
+        <span class='pos_frac'>0.93</span>
+        <span class='neg_frac'>0.07</span>
+      </div>
+      <span class='comments'>27</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000ntnt' target='_blank'><img class='img_waiting' id='ASG000ntnt' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000ntnt</span>
+      <div class='details'>
+        <span class='pos_frac'>0.93</span>
+        <span class='neg_frac'>0.07</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000pr0h' target='_blank'><img class='img_waiting' id='ASG000pr0h' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000pr0h</span>
+      <div class='details'>
+        <span class='pos_frac'>0.92</span>
+        <span class='neg_frac'>0.08</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000zj3x' target='_blank'><img class='img_waiting' id='ASG000zj3x' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000zj3x</span>
+      <div class='details'>
+        <span class='pos_frac'>0.92</span>
+        <span class='neg_frac'>0.08</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG001133n' target='_blank'><img class='img_waiting' id='ASG001133n' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG001133n</span>
+      <div class='details'>
+        <span class='pos_frac'>0.92</span>
+        <span class='neg_frac'>0.08</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0002liq' target='_blank'><img class='img_waiting' id='ASG0002liq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0002liq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.92</span>
+        <span class='neg_frac'>0.08</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000f0tm' target='_blank'><img class='img_waiting' id='ASG000f0tm' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000f0tm</span>
+      <div class='details'>
+        <span class='pos_frac'>0.92</span>
+        <span class='neg_frac'>0.08</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x175' />
+      <span class='zoo_id'>CSGS0000ek</span>
+      <div class='details'>
+        <span class='pos_frac'>0.90</span>
+        <span class='neg_frac'>0.10</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0010apw' target='_blank'><img class='img_waiting' id='ASG0010apw' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0010apw</span>
+      <div class='details'>
+        <span class='pos_frac'>0.90</span>
+        <span class='neg_frac'>0.10</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000bu2h' target='_blank'><img class='img_waiting' id='ASG000bu2h' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000bu2h</span>
+      <div class='details'>
+        <span class='pos_frac'>0.90</span>
+        <span class='neg_frac'>0.10</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000qnft' target='_blank'><img class='img_waiting' id='ASG000qnft' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000qnft</span>
+      <div class='details'>
+        <span class='pos_frac'>0.89</span>
+        <span class='neg_frac'>0.11</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005uhg' target='_blank'><img class='img_waiting' id='ASG0005uhg' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005uhg</span>
+      <div class='details'>
+        <span class='pos_frac'>0.89</span>
+        <span class='neg_frac'>0.11</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00060gk' target='_blank'><img class='img_waiting' id='ASG00060gk' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00060gk</span>
+      <div class='details'>
+        <span class='pos_frac'>0.89</span>
+        <span class='neg_frac'>0.11</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0006gjx' target='_blank'><img class='img_waiting' id='ASG0006gjx' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0006gjx</span>
+      <div class='details'>
+        <span class='pos_frac'>0.89</span>
+        <span class='neg_frac'>0.11</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG001131o' target='_blank'><img class='img_waiting' id='ASG001131o' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG001131o</span>
+      <div class='details'>
+        <span class='pos_frac'>0.88</span>
+        <span class='neg_frac'>0.12</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0006rds' target='_blank'><img class='img_waiting' id='ASG0006rds' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0006rds</span>
+      <div class='details'>
+        <span class='pos_frac'>0.88</span>
+        <span class='neg_frac'>0.12</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003usy' target='_blank'><img class='img_waiting' id='ASG0003usy' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003usy</span>
+      <div class='details'>
+        <span class='pos_frac'>0.88</span>
+        <span class='neg_frac'>0.12</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000d1mo' target='_blank'><img class='img_waiting' id='ASG000d1mo' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000d1mo</span>
+      <div class='details'>
+        <span class='pos_frac'>0.87</span>
+        <span class='neg_frac'>0.13</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005wci' target='_blank'><img class='img_waiting' id='ASG0005wci' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005wci</span>
+      <div class='details'>
+        <span class='pos_frac'>0.87</span>
+        <span class='neg_frac'>0.13</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000a8m1' target='_blank'><img class='img_waiting' id='ASG000a8m1' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000a8m1</span>
+      <div class='details'>
+        <span class='pos_frac'>0.86</span>
+        <span class='neg_frac'>0.14</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000zx5i' target='_blank'><img class='img_waiting' id='ASG000zx5i' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000zx5i</span>
+      <div class='details'>
+        <span class='pos_frac'>0.86</span>
+        <span class='neg_frac'>0.14</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0004viw' target='_blank'><img class='img_waiting' id='ASG0004viw' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0004viw</span>
+      <div class='details'>
+        <span class='pos_frac'>0.86</span>
+        <span class='neg_frac'>0.14</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005nyl' target='_blank'><img class='img_waiting' id='ASG0005nyl' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005nyl</span>
+      <div class='details'>
+        <span class='pos_frac'>0.85</span>
+        <span class='neg_frac'>0.15</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000og2z' target='_blank'><img class='img_waiting' id='ASG000og2z' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000og2z</span>
+      <div class='details'>
+        <span class='pos_frac'>0.85</span>
+        <span class='neg_frac'>0.15</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000ekht' target='_blank'><img class='img_waiting' id='ASG000ekht' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000ekht</span>
+      <div class='details'>
+        <span class='pos_frac'>0.84</span>
+        <span class='neg_frac'>0.16</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000rdz5' target='_blank'><img class='img_waiting' id='ASG000rdz5' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000rdz5</span>
+      <div class='details'>
+        <span class='pos_frac'>0.84</span>
+        <span class='neg_frac'>0.16</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003sz9' target='_blank'><img class='img_waiting' id='ASG0003sz9' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003sz9</span>
+      <div class='details'>
+        <span class='pos_frac'>0.84</span>
+        <span class='neg_frac'>0.16</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0009xb4' target='_blank'><img class='img_waiting' id='ASG0009xb4' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0009xb4</span>
+      <div class='details'>
+        <span class='pos_frac'>0.84</span>
+        <span class='neg_frac'>0.16</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0011fyt' target='_blank'><img class='img_waiting' id='ASG0011fyt' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0011fyt</span>
+      <div class='details'>
+        <span class='pos_frac'>0.84</span>
+        <span class='neg_frac'>0.16</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000brau' target='_blank'><img class='img_waiting' id='ASG000brau' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000brau</span>
+      <div class='details'>
+        <span class='pos_frac'>0.83</span>
+        <span class='neg_frac'>0.17</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000ce9u' target='_blank'><img class='img_waiting' id='ASG000ce9u' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000ce9u</span>
+      <div class='details'>
+        <span class='pos_frac'>0.82</span>
+        <span class='neg_frac'>0.18</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000rkmk' target='_blank'><img class='img_waiting' id='ASG000rkmk' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000rkmk</span>
+      <div class='details'>
+        <span class='pos_frac'>0.82</span>
+        <span class='neg_frac'>0.18</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000bl4b' target='_blank'><img class='img_waiting' id='ASG000bl4b' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000bl4b</span>
+      <div class='details'>
+        <span class='pos_frac'>0.82</span>
+        <span class='neg_frac'>0.18</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0000cxx' target='_blank'><img class='img_waiting' id='ASG0000cxx' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0000cxx</span>
+      <div class='details'>
+        <span class='pos_frac'>0.82</span>
+        <span class='neg_frac'>0.18</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000c555' target='_blank'><img class='img_waiting' id='ASG000c555' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000c555</span>
+      <div class='details'>
+        <span class='pos_frac'>0.81</span>
+        <span class='neg_frac'>0.19</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0000fjl' target='_blank'><img class='img_waiting' id='ASG0000fjl' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0000fjl</span>
+      <div class='details'>
+        <span class='pos_frac'>0.80</span>
+        <span class='neg_frac'>0.20</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003uu8' target='_blank'><img class='img_waiting' id='ASG0003uu8' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003uu8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.80</span>
+        <span class='neg_frac'>0.20</span>
+      </div>
+      <span class='comments'>14</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000z68h' target='_blank'><img class='img_waiting' id='ASG000z68h' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000z68h</span>
+      <div class='details'>
+        <span class='pos_frac'>0.79</span>
+        <span class='neg_frac'>0.21</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000tds1' target='_blank'><img class='img_waiting' id='ASG000tds1' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000tds1</span>
+      <div class='details'>
+        <span class='pos_frac'>0.77</span>
+        <span class='neg_frac'>0.23</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000pm72' target='_blank'><img class='img_waiting' id='ASG000pm72' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000pm72</span>
+      <div class='details'>
+        <span class='pos_frac'>0.77</span>
+        <span class='neg_frac'>0.23</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000e8wp' target='_blank'><img class='img_waiting' id='ASG000e8wp' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000e8wp</span>
+      <div class='details'>
+        <span class='pos_frac'>0.76</span>
+        <span class='neg_frac'>0.24</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0000egp' target='_blank'><img class='img_waiting' id='ASG0000egp' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0000egp</span>
+      <div class='details'>
+        <span class='pos_frac'>0.76</span>
+        <span class='neg_frac'>0.24</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0007tz4' target='_blank'><img class='img_waiting' id='ASG0007tz4' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0007tz4</span>
+      <div class='details'>
+        <span class='pos_frac'>0.75</span>
+        <span class='neg_frac'>0.25</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0001f1x' target='_blank'><img class='img_waiting' id='ASG0001f1x' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0001f1x</span>
+      <div class='details'>
+        <span class='pos_frac'>0.75</span>
+        <span class='neg_frac'>0.25</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0001q11' target='_blank'><img class='img_waiting' id='ASG0001q11' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0001q11</span>
+      <div class='details'>
+        <span class='pos_frac'>0.75</span>
+        <span class='neg_frac'>0.25</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000bywb' target='_blank'><img class='img_waiting' id='ASG000bywb' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000bywb</span>
+      <div class='details'>
+        <span class='pos_frac'>0.75</span>
+        <span class='neg_frac'>0.25</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000ckgf' target='_blank'><img class='img_waiting' id='ASG000ckgf' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000ckgf</span>
+      <div class='details'>
+        <span class='pos_frac'>0.74</span>
+        <span class='neg_frac'>0.26</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000cqdo' target='_blank'><img class='img_waiting' id='ASG000cqdo' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000cqdo</span>
+      <div class='details'>
+        <span class='pos_frac'>0.74</span>
+        <span class='neg_frac'>0.26</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005caq' target='_blank'><img class='img_waiting' id='ASG0005caq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005caq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.73</span>
+        <span class='neg_frac'>0.27</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0002hc5' target='_blank'><img class='img_waiting' id='ASG0002hc5' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0002hc5</span>
+      <div class='details'>
+        <span class='pos_frac'>0.73</span>
+        <span class='neg_frac'>0.27</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0008auq' target='_blank'><img class='img_waiting' id='ASG0008auq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0008auq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.72</span>
+        <span class='neg_frac'>0.28</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0010mdk' target='_blank'><img class='img_waiting' id='ASG0010mdk' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0010mdk</span>
+      <div class='details'>
+        <span class='pos_frac'>0.72</span>
+        <span class='neg_frac'>0.28</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005o16' target='_blank'><img class='img_waiting' id='ASG0005o16' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005o16</span>
+      <div class='details'>
+        <span class='pos_frac'>0.72</span>
+        <span class='neg_frac'>0.28</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0000egm' target='_blank'><img class='img_waiting' id='ASG0000egm' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0000egm</span>
+      <div class='details'>
+        <span class='pos_frac'>0.71</span>
+        <span class='neg_frac'>0.29</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0001f2v' target='_blank'><img class='img_waiting' id='ASG0001f2v' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0001f2v</span>
+      <div class='details'>
+        <span class='pos_frac'>0.71</span>
+        <span class='neg_frac'>0.29</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0004oku' target='_blank'><img class='img_waiting' id='ASG0004oku' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0004oku</span>
+      <div class='details'>
+        <span class='pos_frac'>0.71</span>
+        <span class='neg_frac'>0.29</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000catx' target='_blank'><img class='img_waiting' id='ASG000catx' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000catx</span>
+      <div class='details'>
+        <span class='pos_frac'>0.71</span>
+        <span class='neg_frac'>0.29</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0010w71' target='_blank'><img class='img_waiting' id='ASG0010w71' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0010w71</span>
+      <div class='details'>
+        <span class='pos_frac'>0.71</span>
+        <span class='neg_frac'>0.29</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000a3y0' target='_blank'><img class='img_waiting' id='ASG000a3y0' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000a3y0</span>
+      <div class='details'>
+        <span class='pos_frac'>0.70</span>
+        <span class='neg_frac'>0.30</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000cstm' target='_blank'><img class='img_waiting' id='ASG000cstm' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000cstm</span>
+      <div class='details'>
+        <span class='pos_frac'>0.70</span>
+        <span class='neg_frac'>0.30</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00073vx' target='_blank'><img class='img_waiting' id='ASG00073vx' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00073vx</span>
+      <div class='details'>
+        <span class='pos_frac'>0.70</span>
+        <span class='neg_frac'>0.30</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0010hf7' target='_blank'><img class='img_waiting' id='ASG0010hf7' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0010hf7</span>
+      <div class='details'>
+        <span class='pos_frac'>0.69</span>
+        <span class='neg_frac'>0.31</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0004suq' target='_blank'><img class='img_waiting' id='ASG0004suq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0004suq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.69</span>
+        <span class='neg_frac'>0.31</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000ewe3' target='_blank'><img class='img_waiting' id='ASG000ewe3' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000ewe3</span>
+      <div class='details'>
+        <span class='pos_frac'>0.69</span>
+        <span class='neg_frac'>0.31</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003uv2' target='_blank'><img class='img_waiting' id='ASG0003uv2' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003uv2</span>
+      <div class='details'>
+        <span class='pos_frac'>0.68</span>
+        <span class='neg_frac'>0.32</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000sgtd' target='_blank'><img class='img_waiting' id='ASG000sgtd' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000sgtd</span>
+      <div class='details'>
+        <span class='pos_frac'>0.68</span>
+        <span class='neg_frac'>0.32</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0011qhv' target='_blank'><img class='img_waiting' id='ASG0011qhv' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0011qhv</span>
+      <div class='details'>
+        <span class='pos_frac'>0.68</span>
+        <span class='neg_frac'>0.32</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00074x4' target='_blank'><img class='img_waiting' id='ASG00074x4' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00074x4</span>
+      <div class='details'>
+        <span class='pos_frac'>0.67</span>
+        <span class='neg_frac'>0.33</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005oii' target='_blank'><img class='img_waiting' id='ASG0005oii' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005oii</span>
+      <div class='details'>
+        <span class='pos_frac'>0.67</span>
+        <span class='neg_frac'>0.33</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000cm82' target='_blank'><img class='img_waiting' id='ASG000cm82' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000cm82</span>
+      <div class='details'>
+        <span class='pos_frac'>0.67</span>
+        <span class='neg_frac'>0.33</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000c9os' target='_blank'><img class='img_waiting' id='ASG000c9os' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000c9os</span>
+      <div class='details'>
+        <span class='pos_frac'>0.66</span>
+        <span class='neg_frac'>0.34</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000tsee' target='_blank'><img class='img_waiting' id='ASG000tsee' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000tsee</span>
+      <div class='details'>
+        <span class='pos_frac'>0.66</span>
+        <span class='neg_frac'>0.34</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00066vd' target='_blank'><img class='img_waiting' id='ASG00066vd' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00066vd</span>
+      <div class='details'>
+        <span class='pos_frac'>0.66</span>
+        <span class='neg_frac'>0.34</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00044hg' target='_blank'><img class='img_waiting' id='ASG00044hg' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00044hg</span>
+      <div class='details'>
+        <span class='pos_frac'>0.66</span>
+        <span class='neg_frac'>0.34</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000n2nn' target='_blank'><img class='img_waiting' id='ASG000n2nn' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000n2nn</span>
+      <div class='details'>
+        <span class='pos_frac'>0.66</span>
+        <span class='neg_frac'>0.34</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000r5i2' target='_blank'><img class='img_waiting' id='ASG000r5i2' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000r5i2</span>
+      <div class='details'>
+        <span class='pos_frac'>0.65</span>
+        <span class='neg_frac'>0.35</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0008vi2' target='_blank'><img class='img_waiting' id='ASG0008vi2' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0008vi2</span>
+      <div class='details'>
+        <span class='pos_frac'>0.65</span>
+        <span class='neg_frac'>0.35</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000c09z' target='_blank'><img class='img_waiting' id='ASG000c09z' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000c09z</span>
+      <div class='details'>
+        <span class='pos_frac'>0.65</span>
+        <span class='neg_frac'>0.35</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0011pfu' target='_blank'><img class='img_waiting' id='ASG0011pfu' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0011pfu</span>
+      <div class='details'>
+        <span class='pos_frac'>0.65</span>
+        <span class='neg_frac'>0.35</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00006ag' target='_blank'><img class='img_waiting' id='ASG00006ag' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00006ag</span>
+      <div class='details'>
+        <span class='pos_frac'>0.65</span>
+        <span class='neg_frac'>0.35</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0000fts' target='_blank'><img class='img_waiting' id='ASG0000fts' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0000fts</span>
+      <div class='details'>
+        <span class='pos_frac'>0.65</span>
+        <span class='neg_frac'>0.35</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000bfi8' target='_blank'><img class='img_waiting' id='ASG000bfi8' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000bfi8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.64</span>
+        <span class='neg_frac'>0.36</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0001hju' target='_blank'><img class='img_waiting' id='ASG0001hju' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0001hju</span>
+      <div class='details'>
+        <span class='pos_frac'>0.64</span>
+        <span class='neg_frac'>0.36</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0002jr3' target='_blank'><img class='img_waiting' id='ASG0002jr3' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0002jr3</span>
+      <div class='details'>
+        <span class='pos_frac'>0.64</span>
+        <span class='neg_frac'>0.36</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000n1au' target='_blank'><img class='img_waiting' id='ASG000n1au' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000n1au</span>
+      <div class='details'>
+        <span class='pos_frac'>0.63</span>
+        <span class='neg_frac'>0.37</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003rzd' target='_blank'><img class='img_waiting' id='ASG0003rzd' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003rzd</span>
+      <div class='details'>
+        <span class='pos_frac'>0.63</span>
+        <span class='neg_frac'>0.37</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000neyf' target='_blank'><img class='img_waiting' id='ASG000neyf' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000neyf</span>
+      <div class='details'>
+        <span class='pos_frac'>0.62</span>
+        <span class='neg_frac'>0.38</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0001aqt' target='_blank'><img class='img_waiting' id='ASG0001aqt' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0001aqt</span>
+      <div class='details'>
+        <span class='pos_frac'>0.62</span>
+        <span class='neg_frac'>0.38</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00024tu' target='_blank'><img class='img_waiting' id='ASG00024tu' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00024tu</span>
+      <div class='details'>
+        <span class='pos_frac'>0.62</span>
+        <span class='neg_frac'>0.38</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000tuev' target='_blank'><img class='img_waiting' id='ASG000tuev' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000tuev</span>
+      <div class='details'>
+        <span class='pos_frac'>0.61</span>
+        <span class='neg_frac'>0.39</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0010w8e' target='_blank'><img class='img_waiting' id='ASG0010w8e' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0010w8e</span>
+      <div class='details'>
+        <span class='pos_frac'>0.61</span>
+        <span class='neg_frac'>0.39</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00071ou' target='_blank'><img class='img_waiting' id='ASG00071ou' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00071ou</span>
+      <div class='details'>
+        <span class='pos_frac'>0.61</span>
+        <span class='neg_frac'>0.39</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0006jki' target='_blank'><img class='img_waiting' id='ASG0006jki' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0006jki</span>
+      <div class='details'>
+        <span class='pos_frac'>0.61</span>
+        <span class='neg_frac'>0.39</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000on5f' target='_blank'><img class='img_waiting' id='ASG000on5f' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000on5f</span>
+      <div class='details'>
+        <span class='pos_frac'>0.60</span>
+        <span class='neg_frac'>0.40</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000501x' target='_blank'><img class='img_waiting' id='ASG000501x' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000501x</span>
+      <div class='details'>
+        <span class='pos_frac'>0.59</span>
+        <span class='neg_frac'>0.41</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000n3v8' target='_blank'><img class='img_waiting' id='ASG000n3v8' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000n3v8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.59</span>
+        <span class='neg_frac'>0.41</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000zihk' target='_blank'><img class='img_waiting' id='ASG000zihk' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000zihk</span>
+      <div class='details'>
+        <span class='pos_frac'>0.59</span>
+        <span class='neg_frac'>0.41</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000a5pd' target='_blank'><img class='img_waiting' id='ASG000a5pd' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000a5pd</span>
+      <div class='details'>
+        <span class='pos_frac'>0.58</span>
+        <span class='neg_frac'>0.42</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG00041n2' target='_blank'><img class='img_waiting' id='ASG00041n2' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG00041n2</span>
+      <div class='details'>
+        <span class='pos_frac'>0.57</span>
+        <span class='neg_frac'>0.43</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000zxby' target='_blank'><img class='img_waiting' id='ASG000zxby' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000zxby</span>
+      <div class='details'>
+        <span class='pos_frac'>0.57</span>
+        <span class='neg_frac'>0.43</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000ox5d' target='_blank'><img class='img_waiting' id='ASG000ox5d' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000ox5d</span>
+      <div class='details'>
+        <span class='pos_frac'>0.57</span>
+        <span class='neg_frac'>0.43</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0005ceh' target='_blank'><img class='img_waiting' id='ASG0005ceh' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0005ceh</span>
+      <div class='details'>
+        <span class='pos_frac'>0.57</span>
+        <span class='neg_frac'>0.43</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003lzq' target='_blank'><img class='img_waiting' id='ASG0003lzq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003lzq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.56</span>
+        <span class='neg_frac'>0.44</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000qvt8' target='_blank'><img class='img_waiting' id='ASG000qvt8' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000qvt8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.56</span>
+        <span class='neg_frac'>0.44</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000e92y' target='_blank'><img class='img_waiting' id='ASG000e92y' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000e92y</span>
+      <div class='details'>
+        <span class='pos_frac'>0.55</span>
+        <span class='neg_frac'>0.45</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000akfe' target='_blank'><img class='img_waiting' id='ASG000akfe' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000akfe</span>
+      <div class='details'>
+        <span class='pos_frac'>0.55</span>
+        <span class='neg_frac'>0.45</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000sjj4' target='_blank'><img class='img_waiting' id='ASG000sjj4' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000sjj4</span>
+      <div class='details'>
+        <span class='pos_frac'>0.55</span>
+        <span class='neg_frac'>0.45</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0008q0n' target='_blank'><img class='img_waiting' id='ASG0008q0n' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0008q0n</span>
+      <div class='details'>
+        <span class='pos_frac'>0.54</span>
+        <span class='neg_frac'>0.46</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000pvll' target='_blank'><img class='img_waiting' id='ASG000pvll' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000pvll</span>
+      <div class='details'>
+        <span class='pos_frac'>0.54</span>
+        <span class='neg_frac'>0.46</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000amms' target='_blank'><img class='img_waiting' id='ASG000amms' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000amms</span>
+      <div class='details'>
+        <span class='pos_frac'>0.53</span>
+        <span class='neg_frac'>0.47</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000ptcg' target='_blank'><img class='img_waiting' id='ASG000ptcg' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000ptcg</span>
+      <div class='details'>
+        <span class='pos_frac'>0.53</span>
+        <span class='neg_frac'>0.47</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003ush' target='_blank'><img class='img_waiting' id='ASG0003ush' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003ush</span>
+      <div class='details'>
+        <span class='pos_frac'>0.53</span>
+        <span class='neg_frac'>0.47</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000mvkl' target='_blank'><img class='img_waiting' id='ASG000mvkl' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000mvkl</span>
+      <div class='details'>
+        <span class='pos_frac'>0.53</span>
+        <span class='neg_frac'>0.47</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG000aycq' target='_blank'><img class='img_waiting' id='ASG000aycq' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG000aycq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.52</span>
+        <span class='neg_frac'>0.48</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0010a86' target='_blank'><img class='img_waiting' id='ASG0010a86' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0010a86</span>
+      <div class='details'>
+        <span class='pos_frac'>0.52</span>
+        <span class='neg_frac'>0.48</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0001f2t' target='_blank'><img class='img_waiting' id='ASG0001f2t' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0001f2t</span>
+      <div class='details'>
+        <span class='pos_frac'>0.51</span>
+        <span class='neg_frac'>0.49</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.snapshotserengeti.org/#/subjects/ASG0003lcd' target='_blank'><img class='img_waiting' id='ASG0003lcd' src='http://placehold.it/250x175' /></a>
+      <span class='zoo_id'>ASG0003lcd</span>
+      <div class='details'>
+        <span class='pos_frac'>0.51</span>
+        <span class='neg_frac'>0.49</span>
+      </div>
+      <span class='comments'>5</span>
+
+    </div></body>
