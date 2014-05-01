@@ -20,3 +20,12 @@ To try it, ensure the MySQL connection is setup and try running it with `python 
 
 The [most positive sentiment images from Galaxy Zoo](http://htmlpreview.github.io/?https://github.com/ttfnrob/NLTalk/blob/master/output/galaxy_zoo/galaxy_zoo_5_positive.html) based on Talk threads with 5 or more comments.
 The [most positive sentiment images from Snapshot Serengeti](http://htmlpreview.github.io/?https://github.com/ttfnrob/NLTalk/blob/master/output/serengeti/serengeti_5_positive.html) based on Talk threads with 5 or more comments.
+
+![Example Image](https://raw.githubusercontent.com/ttfnrob/NLTalk/master/example-gz.png)
+
+Images are linked to Talk page, and shown with:
+- Zooniverse ID in the top-left
+- Number of comments top-right
+- Positive and Negative scores in the bottom-left (colour-coded) 
+
+
