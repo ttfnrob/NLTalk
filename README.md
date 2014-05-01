@@ -1,4 +1,5 @@
-# NLTK (Python) Processing of Zooniverse Talk
+# Natural Language Processing of Zooniverse Talk Data
+## [using Python+NLTK]
 
 ### Basics
 
