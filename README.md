@@ -11,11 +11,9 @@ This is extracted from the Zooniverse discussion platform 'Talk' - please contac
 
 ### I/O
 
-Inputs are a MySQL DB of text comments, and NLTK+training data
+Inputs are a MySQL DB of text comments, and NLTK+training data. Outputs are CSV for of sentiment scores, and HTML files to show positive and negative comments
 
-Outputs are CSV for of sentiment scores, and HTML files to show positive and negative comments
-
-Just ensure the MySQL connection is setup and try running it with `python process_comments.py`
+To try it, ensure the MySQL connection is setup and try running it with `python process_comments.py`
 
 ### Example Results
 
