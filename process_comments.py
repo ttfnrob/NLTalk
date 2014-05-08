@@ -13,6 +13,8 @@ import time
 import datetime
 import os
 import numpy as np
+import pandas as pd
+import sys
 
 # For database and data IO
 import pymysql
@@ -30,24 +32,25 @@ from nltk.probability import FreqDist, ConditionalFreqDist
 
 ########################## Set parameters for different projects ##########################
 
-# db_table = 'gz'
 # project_slug = 'galaxy_zoo'
 # talk_url = 'talk.galaxyzoo.org'
 # min_comments = 5
 # imgy='250'
 
-db_table = 'ss'
-project_slug = 'serengeti'
-talk_url = 'talk.snapshotserengeti.org'
+# project_slug = 'serengeti'
+# talk_url = 'talk.snapshotserengeti.org'
+# min_comments = 5
+# imgy='175'
+
+project_slug = 'planet_four'
+talk_url = 'talk.planetfour.org'
 min_comments = 5
-imgy='175'
+imgy='193'
 
-########## Connect to MySQL database and ensure group_concat can be maximised ############
-
-# Connect to MySQL DB
-conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', db='big_talk_comments', charset='utf8')
-cur = conn.cursor()
-cur.execute("SET GLOBAL group_concat_max_len=15000")
+# project_slug = 'milky_way'
+# talk_url = 'talk.milkywayproject.org'
+# min_comments = 5
+# imgy='125'
 
 ######################## ------------------------------------- ###########################
 
@@ -161,7 +164,12 @@ def create_word_scores():
 
   return word_scores
 
-print "Initialized "+project_slug+" with min of "+str(min_comments)
+if len(sys.argv) < 2:
+  print "No file specificed\n"
+else:
+  input_filename = sys.argv[1]
+
+print "Initialized "+project_slug+" with min of "+str(min_comments)+" - processing file "+input_filename
 
 print "Loading training data..."
 DATA_DIRECTORY = os.path.join('training-data', 'twitter_data')
@@ -210,22 +218,20 @@ for i, (features, label) in enumerate(testFeatures):
 
 print "Esimated accuracy: ", nltk.classify.util.accuracy(classifier, testFeatures)
 
-# Run MySQL query
-cur.execute("SELECT * FROM (SELECT   GROUP_CONCAT(body) as body, focus_id, COUNT(*) as count FROM "+db_table+" GROUP BY focus_id) tb1 WHERE count >= "+str(min_comments))
 
-print "Talk data loaded from MySQL"
+print "Talk data loaded from file"
 print "Performing sentiment analysis..."
 
-focus_list = []
-# Iterate MySQL results
-for r in cur:
-  string = r[0]
-  ob = (classifier.classify(extract_features(string.split())), classifier.prob_classify(extract_features(string.split())).prob('pos'), classifier.prob_classify(extract_features(string.split())).prob('neg'), r[1], r[2], extract_features(string.split()))
-  focus_list.insert(0, ob)
+df = pd.read_csv(input_filename, skipinitialspace=True, sep='\t')
+g =  df.groupby('focus_id')
+flist = g['body'].apply(list)
 
-# Close MySQL DB
-cur.close()
-conn.close()
+focus_list = []
+for k,v in flist.iteritems():
+  if (len(v)>5):
+    string = ' '.join(v)
+    ob = (classifier.classify(extract_features(string.split())), classifier.prob_classify(extract_features(string.split())).prob('pos'), classifier.prob_classify(extract_features(string.split())).prob('neg'), k, len(v), extract_features(string.split()))
+    focus_list.insert(0, ob)
 
 # Create lists
 sorted_list = sorted(focus_list, key=lambda x: (-x[1], x[4]))

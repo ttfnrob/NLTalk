@@ -1,0 +1,725 @@
+<style type="text/css">
+  body {font-size:14px; color: #ffffff; font-family: sans-serif;}
+  div.thumbnail {display: inline-block; position: relative; margin: 5px;}
+  div.thumbnail img {width:250px;}
+  div.details {position:absolute; bottom:5px; left:5px; width:240px;}
+  span.pos_frac {color: #8DFF87;}
+  span.neg_frac {color: #FF7B6B;}
+  span.zoo_id {position:absolute; top:5px; left:5px;}
+  span.comments {position:absolute; top:5px; right:5px;}
+  span.words {display:none;}
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+     function id2url(zooID) {
+       $.getJSON( "https://api.zooniverse.org/projects/milky_way/subjects/"+zooID, function( data ) {
+        if (data.location.standard instanceof Array) {
+          $("#"+zooID).attr("src", data.location.standard[0]);
+        } else {
+          $("#"+zooID).attr("src", data.location.standard);
+        }
+      });
+     }
+     $(document).ready(function() {
+       $( ".img_waiting" ).each(function( index ) {
+          id2url($( this ).attr('id'));
+       });
+     })
+  </script>
+
+  <body>
+  <div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>BMW0000002</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>324</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>BMW0000001</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>205</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000h4y' target='_blank'><img class='img_waiting' id='AMW0000h4y' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000h4y</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>21</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00016p0' target='_blank'><img class='img_waiting' id='AMW00016p0' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00016p0</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>44</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00010vp' target='_blank'><img class='img_waiting' id='AMW00010vp' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00010vp</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>13</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000zf4' target='_blank'><img class='img_waiting' id='AMW0000zf4' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000zf4</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000vs7' target='_blank'><img class='img_waiting' id='AMW0000vs7' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000vs7</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>12</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002vrx' target='_blank'><img class='img_waiting' id='AMW0002vrx' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002vrx</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000k5c' target='_blank'><img class='img_waiting' id='AMW0000k5c' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000k5c</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>13</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000uk5' target='_blank'><img class='img_waiting' id='AMW0000uk5' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000uk5</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000qyt' target='_blank'><img class='img_waiting' id='AMW0000qyt' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000qyt</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000xeo' target='_blank'><img class='img_waiting' id='AMW0000xeo' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000xeo</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002unu' target='_blank'><img class='img_waiting' id='AMW0002unu' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002unu</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000ujw' target='_blank'><img class='img_waiting' id='AMW0000ujw' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000ujw</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002wjf' target='_blank'><img class='img_waiting' id='AMW0002wjf' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002wjf</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00012wm' target='_blank'><img class='img_waiting' id='AMW00012wm' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00012wm</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>12</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00012j9' target='_blank'><img class='img_waiting' id='AMW00012j9' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00012j9</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>CMWL000003</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>16</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000z56' target='_blank'><img class='img_waiting' id='AMW0000z56' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000z56</span>
+      <div class='details'>
+        <span class='pos_frac'>1.00</span>
+        <span class='neg_frac'>0.00</span>
+      </div>
+      <span class='comments'>17</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW000170i' target='_blank'><img class='img_waiting' id='AMW000170i' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW000170i</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000ud7' target='_blank'><img class='img_waiting' id='AMW0000ud7' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000ud7</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000tep' target='_blank'><img class='img_waiting' id='AMW0000tep' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000tep</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002swx' target='_blank'><img class='img_waiting' id='AMW0002swx' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002swx</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00015o1' target='_blank'><img class='img_waiting' id='AMW00015o1' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00015o1</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW000168j' target='_blank'><img class='img_waiting' id='AMW000168j' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW000168j</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00013b2' target='_blank'><img class='img_waiting' id='AMW00013b2' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00013b2</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000p22' target='_blank'><img class='img_waiting' id='AMW0000p22' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000p22</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00011u6' target='_blank'><img class='img_waiting' id='AMW00011u6' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00011u6</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>11</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00016ju' target='_blank'><img class='img_waiting' id='AMW00016ju' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00016ju</span>
+      <div class='details'>
+        <span class='pos_frac'>0.99</span>
+        <span class='neg_frac'>0.01</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000t1o' target='_blank'><img class='img_waiting' id='AMW0000t1o' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000t1o</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000y98' target='_blank'><img class='img_waiting' id='AMW0000y98' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000y98</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00012gr' target='_blank'><img class='img_waiting' id='AMW00012gr' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00012gr</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>CMWS00000k</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0001nl8' target='_blank'><img class='img_waiting' id='AMW0001nl8' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0001nl8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>CMWS000001</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0001822' target='_blank'><img class='img_waiting' id='AMW0001822' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0001822</span>
+      <div class='details'>
+        <span class='pos_frac'>0.98</span>
+        <span class='neg_frac'>0.02</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000vns' target='_blank'><img class='img_waiting' id='AMW0000vns' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000vns</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000t1f' target='_blank'><img class='img_waiting' id='AMW0000t1f' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000t1f</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000zjm' target='_blank'><img class='img_waiting' id='AMW0000zjm' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000zjm</span>
+      <div class='details'>
+        <span class='pos_frac'>0.97</span>
+        <span class='neg_frac'>0.03</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0001079' target='_blank'><img class='img_waiting' id='AMW0001079' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0001079</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>14</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00014h9' target='_blank'><img class='img_waiting' id='AMW00014h9' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00014h9</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000td7' target='_blank'><img class='img_waiting' id='AMW0000td7' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000td7</span>
+      <div class='details'>
+        <span class='pos_frac'>0.96</span>
+        <span class='neg_frac'>0.04</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002sfj' target='_blank'><img class='img_waiting' id='AMW0002sfj' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002sfj</span>
+      <div class='details'>
+        <span class='pos_frac'>0.95</span>
+        <span class='neg_frac'>0.05</span>
+      </div>
+      <span class='comments'>11</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000i0n' target='_blank'><img class='img_waiting' id='AMW0000i0n' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000i0n</span>
+      <div class='details'>
+        <span class='pos_frac'>0.95</span>
+        <span class='neg_frac'>0.05</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000prc' target='_blank'><img class='img_waiting' id='AMW0000prc' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000prc</span>
+      <div class='details'>
+        <span class='pos_frac'>0.95</span>
+        <span class='neg_frac'>0.05</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000v92' target='_blank'><img class='img_waiting' id='AMW0000v92' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000v92</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000vbq' target='_blank'><img class='img_waiting' id='AMW0000vbq' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000vbq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002zh4' target='_blank'><img class='img_waiting' id='AMW0002zh4' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002zh4</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002si5' target='_blank'><img class='img_waiting' id='AMW0002si5' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002si5</span>
+      <div class='details'>
+        <span class='pos_frac'>0.94</span>
+        <span class='neg_frac'>0.06</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00012hm' target='_blank'><img class='img_waiting' id='AMW00012hm' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00012hm</span>
+      <div class='details'>
+        <span class='pos_frac'>0.91</span>
+        <span class='neg_frac'>0.09</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002t48' target='_blank'><img class='img_waiting' id='AMW0002t48' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002t48</span>
+      <div class='details'>
+        <span class='pos_frac'>0.91</span>
+        <span class='neg_frac'>0.09</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000q94' target='_blank'><img class='img_waiting' id='AMW0000q94' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000q94</span>
+      <div class='details'>
+        <span class='pos_frac'>0.90</span>
+        <span class='neg_frac'>0.10</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002re9' target='_blank'><img class='img_waiting' id='AMW0002re9' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002re9</span>
+      <div class='details'>
+        <span class='pos_frac'>0.90</span>
+        <span class='neg_frac'>0.10</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00016zt' target='_blank'><img class='img_waiting' id='AMW00016zt' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00016zt</span>
+      <div class='details'>
+        <span class='pos_frac'>0.86</span>
+        <span class='neg_frac'>0.14</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002vku' target='_blank'><img class='img_waiting' id='AMW0002vku' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002vku</span>
+      <div class='details'>
+        <span class='pos_frac'>0.84</span>
+        <span class='neg_frac'>0.16</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002tds' target='_blank'><img class='img_waiting' id='AMW0002tds' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002tds</span>
+      <div class='details'>
+        <span class='pos_frac'>0.83</span>
+        <span class='neg_frac'>0.17</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000up5' target='_blank'><img class='img_waiting' id='AMW0000up5' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000up5</span>
+      <div class='details'>
+        <span class='pos_frac'>0.79</span>
+        <span class='neg_frac'>0.21</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>CMWS00004c</span>
+      <div class='details'>
+        <span class='pos_frac'>0.78</span>
+        <span class='neg_frac'>0.22</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00016q3' target='_blank'><img class='img_waiting' id='AMW00016q3' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00016q3</span>
+      <div class='details'>
+        <span class='pos_frac'>0.78</span>
+        <span class='neg_frac'>0.22</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00015x3' target='_blank'><img class='img_waiting' id='AMW00015x3' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00015x3</span>
+      <div class='details'>
+        <span class='pos_frac'>0.78</span>
+        <span class='neg_frac'>0.22</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000xlq' target='_blank'><img class='img_waiting' id='AMW0000xlq' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000xlq</span>
+      <div class='details'>
+        <span class='pos_frac'>0.76</span>
+        <span class='neg_frac'>0.24</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00014d1' target='_blank'><img class='img_waiting' id='AMW00014d1' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00014d1</span>
+      <div class='details'>
+        <span class='pos_frac'>0.75</span>
+        <span class='neg_frac'>0.25</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>BMW0000005</span>
+      <div class='details'>
+        <span class='pos_frac'>0.71</span>
+        <span class='neg_frac'>0.29</span>
+      </div>
+      <span class='comments'>14</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002ukg' target='_blank'><img class='img_waiting' id='AMW0002ukg' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002ukg</span>
+      <div class='details'>
+        <span class='pos_frac'>0.71</span>
+        <span class='neg_frac'>0.29</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000q8g' target='_blank'><img class='img_waiting' id='AMW0000q8g' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000q8g</span>
+      <div class='details'>
+        <span class='pos_frac'>0.70</span>
+        <span class='neg_frac'>0.30</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00011gw' target='_blank'><img class='img_waiting' id='AMW00011gw' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00011gw</span>
+      <div class='details'>
+        <span class='pos_frac'>0.69</span>
+        <span class='neg_frac'>0.31</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000sw5' target='_blank'><img class='img_waiting' id='AMW0000sw5' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000sw5</span>
+      <div class='details'>
+        <span class='pos_frac'>0.69</span>
+        <span class='neg_frac'>0.31</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000ud6' target='_blank'><img class='img_waiting' id='AMW0000ud6' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000ud6</span>
+      <div class='details'>
+        <span class='pos_frac'>0.67</span>
+        <span class='neg_frac'>0.33</span>
+      </div>
+      <span class='comments'>7</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00017so' target='_blank'><img class='img_waiting' id='AMW00017so' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00017so</span>
+      <div class='details'>
+        <span class='pos_frac'>0.62</span>
+        <span class='neg_frac'>0.38</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000wwc' target='_blank'><img class='img_waiting' id='AMW0000wwc' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000wwc</span>
+      <div class='details'>
+        <span class='pos_frac'>0.62</span>
+        <span class='neg_frac'>0.38</span>
+      </div>
+      <span class='comments'>23</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0002vvp' target='_blank'><img class='img_waiting' id='AMW0002vvp' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0002vvp</span>
+      <div class='details'>
+        <span class='pos_frac'>0.62</span>
+        <span class='neg_frac'>0.38</span>
+      </div>
+      <span class='comments'>8</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW000104p' target='_blank'><img class='img_waiting' id='AMW000104p' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW000104p</span>
+      <div class='details'>
+        <span class='pos_frac'>0.61</span>
+        <span class='neg_frac'>0.39</span>
+      </div>
+      <span class='comments'>10</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0000xv8' target='_blank'><img class='img_waiting' id='AMW0000xv8' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0000xv8</span>
+      <div class='details'>
+        <span class='pos_frac'>0.60</span>
+        <span class='neg_frac'>0.40</span>
+      </div>
+      <span class='comments'>30</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW0001029' target='_blank'><img class='img_waiting' id='AMW0001029' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW0001029</span>
+      <div class='details'>
+        <span class='pos_frac'>0.60</span>
+        <span class='neg_frac'>0.40</span>
+      </div>
+      <span class='comments'>9</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00014qp' target='_blank'><img class='img_waiting' id='AMW00014qp' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00014qp</span>
+      <div class='details'>
+        <span class='pos_frac'>0.59</span>
+        <span class='neg_frac'>0.41</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div><div class='thumbnail'>
+      <img class='thumb' src='http://placehold.it/250x125' />
+      <span class='zoo_id'>CMWS00004b</span>
+      <div class='details'>
+        <span class='pos_frac'>0.56</span>
+        <span class='neg_frac'>0.44</span>
+      </div>
+      <span class='comments'>22</span>
+
+    </div><div class='thumbnail'>
+      <a href='http://talk.milkywayproject.org/#/subjects/AMW00011mh' target='_blank'><img class='img_waiting' id='AMW00011mh' src='http://placehold.it/250x125' /></a>
+      <span class='zoo_id'>AMW00011mh</span>
+      <div class='details'>
+        <span class='pos_frac'>0.55</span>
+        <span class='neg_frac'>0.45</span>
+      </div>
+      <span class='comments'>6</span>
+
+    </div></body>
