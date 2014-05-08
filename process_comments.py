@@ -229,7 +229,7 @@ flist = g['body'].apply(list)
 focus_list = []
 for k,v in flist.iteritems():
   if (len(v)>5):
-    string = ' '.join(v)
+    string = ' '.join(str(v))
     ob = (classifier.classify(extract_features(string.split())), classifier.prob_classify(extract_features(string.split())).prob('pos'), classifier.prob_classify(extract_features(string.split())).prob('neg'), k, len(v), extract_features(string.split()))
     focus_list.insert(0, ob)
 

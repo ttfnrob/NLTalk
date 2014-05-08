@@ -13,5 +13,6 @@ flist = g['body'].apply(list)
 focus_list = []
 for k,v in flist.iteritems():
   if (len(v)>5):
-    text = ' '.join(v)
+    print v
+    text = ' '.join(str(v))
     focus_list.insert(0, text)
