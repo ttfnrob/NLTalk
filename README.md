@@ -12,9 +12,9 @@ This is extracted from the Zooniverse discussion platform 'Talk' - please contac
 
 ### I/O
 
-Inputs are a MySQL DB of text comments, and NLTK+training data. Outputs are CSV for of sentiment scores, and HTML files to show positive and negative comments
+Inputs are a CSV dump of text comments, and NLTK+training data. Outputs are CSV for of sentiment scores, and HTML files to show positive and negative comments
 
-To try it, ensure the MySQL connection is setup and try running it with `python process_comments.py`
+It runs with the filename as a param, i.e. `python process_comments.py example_input_file.csv` 
 
 ### Example Results
 
@@ -26,6 +26,4 @@ The [most positive sentiment images from Snapshot Serengeti](http://htmlpreview.
 Images are linked to Talk page, and shown with:
 - Zooniverse ID in the top-left
 - Number of comments top-right
-- Positive and Negative scores in the bottom-left (colour-coded) 
-
-
+- Positive and Negative scores in the bottom-left (colour-coded)
