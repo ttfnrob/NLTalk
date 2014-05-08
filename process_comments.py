@@ -32,20 +32,20 @@ from nltk.probability import FreqDist, ConditionalFreqDist
 
 ########################## Set parameters for different projects ##########################
 
-project_slug = 'galaxy_zoo'
-talk_url = 'talk.galaxyzoo.org'
-min_comments = 5
-imgy='250'
+# project_slug = 'galaxy_zoo'
+# talk_url = 'talk.galaxyzoo.org'
+# min_comments = 5
+# imgy='250'
 
 # project_slug = 'serengeti'
 # talk_url = 'talk.snapshotserengeti.org'
 # min_comments = 5
 # imgy='175'
 
-# project_slug = 'planet_four'
-# talk_url = 'talk.planetfour.org'
-# min_comments = 5
-# imgy='193'
+project_slug = 'planet_four'
+talk_url = 'talk.planetfour.org'
+min_comments = 5
+imgy='193'
 
 # project_slug = 'milky_way'
 # talk_url = 'talk.milkywayproject.org'
@@ -231,7 +231,7 @@ for k,v in flist.iteritems():
   if (isinstance(v, list)):
     if (len(v)>min_comments):
       string = ' '.join([str(i) for i in v])
-      print string
+      # print string
       ob = (classifier.classify(extract_features(string.split())), classifier.prob_classify(extract_features(string.split())).prob('pos'), classifier.prob_classify(extract_features(string.split())).prob('neg'), k, len(v), extract_features(string.split()))
       focus_list.insert(0, ob)
 
